@@ -11,6 +11,7 @@
 		9372887A2A79B21B0029526C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937288792A79B21B0029526C /* ContentView.swift */; };
 		9372887C2A79B21E0029526C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9372887B2A79B21E0029526C /* Assets.xcassets */; };
 		9372887F2A79B21E0029526C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9372887E2A79B21E0029526C /* Preview Assets.xcassets */; };
+		937288882A7AEF100029526C /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937288872A7AEF100029526C /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		9372887B2A79B21E0029526C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9372887E2A79B21E0029526C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		937288802A79B21E0029526C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937288872A7AEF100029526C /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				937288772A79B21B0029526C /* GoogleLoginApp.swift */,
 				937288792A79B21B0029526C /* ContentView.swift */,
+				937288872A7AEF100029526C /* HomePage.swift */,
 				9372887B2A79B21E0029526C /* Assets.xcassets */,
 				937288802A79B21E0029526C /* Info.plist */,
 				9372887D2A79B21E0029526C /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9372887A2A79B21B0029526C /* ContentView.swift in Sources */,
+				937288882A7AEF100029526C /* HomePage.swift in Sources */,
 				937288782A79B21B0029526C /* GoogleLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
