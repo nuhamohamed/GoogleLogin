@@ -9,7 +9,33 @@ import SwiftUI
 
 struct HomePage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            
+            ZStack{
+                Color.red
+                
+                Image(systemName: "house.fill")
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 100.0))
+            }
+            
+            HomePage()
+                .tabItem(){
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            Assignment()
+                .tabItem(){
+                    Image(systemName: "plus.app.fill")
+                    Text("Add")
+                }
+            Calendar()
+                .tabItem(){
+                    Image(systemName: "calendar")
+                    Text("Calendar")
+                }
+            
+        }
     }
 }
 

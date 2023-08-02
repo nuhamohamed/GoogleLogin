@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86BB71432A7B0B9100F873E7 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB71422A7B0B9100F873E7 /* Assignment.swift */; };
+		86BB71452A7B0BAB00F873E7 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB71442A7B0BAB00F873E7 /* Calendar.swift */; };
 		937288782A79B21B0029526C /* GoogleLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937288772A79B21B0029526C /* GoogleLoginApp.swift */; };
 		9372887A2A79B21B0029526C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937288792A79B21B0029526C /* ContentView.swift */; };
 		9372887C2A79B21E0029526C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9372887B2A79B21E0029526C /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86BB71422A7B0B9100F873E7 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		86BB71442A7B0BAB00F873E7 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		937288742A79B21B0029526C /* GoogleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937288772A79B21B0029526C /* GoogleLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginApp.swift; sourceTree = "<group>"; };
 		937288792A79B21B0029526C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86BB71412A7B0B7000F873E7 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		9372886B2A79B21B0029526C = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +67,10 @@
 			children = (
 				937288772A79B21B0029526C /* GoogleLoginApp.swift */,
 				937288792A79B21B0029526C /* ContentView.swift */,
+				86BB71412A7B0B7000F873E7 /* Pages */,
 				937288872A7AEF100029526C /* HomePage.swift */,
+				86BB71422A7B0B9100F873E7 /* Assignment.swift */,
+				86BB71442A7B0BAB00F873E7 /* Calendar.swift */,
 				9372887B2A79B21E0029526C /* Assets.xcassets */,
 				937288802A79B21E0029526C /* Info.plist */,
 				9372887D2A79B21E0029526C /* Preview Content */,
@@ -141,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BB71432A7B0B9100F873E7 /* Assignment.swift in Sources */,
 				9372887A2A79B21B0029526C /* ContentView.swift in Sources */,
 				937288882A7AEF100029526C /* HomePage.swift in Sources */,
 				937288782A79B21B0029526C /* GoogleLoginApp.swift in Sources */,
+				86BB71452A7B0BAB00F873E7 /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
