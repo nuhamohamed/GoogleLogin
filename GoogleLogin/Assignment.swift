@@ -9,12 +9,10 @@ import SwiftUI
 
 struct Assignment: View {
     var body: some View {
-        ZStack{
-            Color.blue
-            
-            Image(systemName: "plus.app.fill")
-                .foregroundColor(Color.white)
-                .font(.system(size: 100.0))
+        VStack{
+            Text("Assignment Input Page")
+                .font(.largeTitle)
+                .fontWeight(.bold)
         }
     }
 }

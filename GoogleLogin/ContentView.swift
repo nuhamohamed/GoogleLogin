@@ -15,7 +15,8 @@ struct ContentView: View {
         NavigationView {
         VStack{
             NavigationLink(destination: HomePage()) {
-                Text("Home")
+                Image(systemName: "house.fill")
+
             }
             Text("Re-Do")
                 .font(.title)

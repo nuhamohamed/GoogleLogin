@@ -9,12 +9,10 @@ import SwiftUI
 
 struct Calendar: View {
     var body: some View {
-        ZStack{
-            Color.green
-            
-            Image(systemName: "calendar")
-                .foregroundColor(Color.white)
-                .font(.system(size: 100.0))
+        VStack{
+            Text("Calendar Page")
+                .font(.largeTitle)
+                .fontWeight(.bold)
         }
     }
 }
