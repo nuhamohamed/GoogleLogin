@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576F87062A7D79EF00D3D709 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F87052A7D79EF00D3D709 /* Home.swift */; };
+		576F87092A7D7A6D00D3D709 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F87082A7D7A6D00D3D709 /* TaskViewModel.swift */; };
+		576F870E2A7D7ACC00D3D709 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F870D2A7D7ACC00D3D709 /* Task.swift */; };
 		86BB71432A7B0B9100F873E7 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB71422A7B0B9100F873E7 /* Assignment.swift */; };
 		86BB71452A7B0BAB00F873E7 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB71442A7B0BAB00F873E7 /* Calendar.swift */; };
 		937288782A79B21B0029526C /* GoogleLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937288772A79B21B0029526C /* GoogleLoginApp.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		576F87052A7D79EF00D3D709 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		576F87082A7D7A6D00D3D709 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		576F870D2A7D7ACC00D3D709 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		86BB71422A7B0B9100F873E7 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		86BB71442A7B0BAB00F873E7 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		937288742A79B21B0029526C /* GoogleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		576F87072A7D7A5A00D3D709 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				576F87082A7D7A6D00D3D709 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		576F870C2A7D7ABC00D3D709 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				576F870D2A7D7ACC00D3D709 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		86BB71412A7B0B7000F873E7 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +93,9 @@
 				937288872A7AEF100029526C /* HomePage.swift */,
 				86BB71422A7B0B9100F873E7 /* Assignment.swift */,
 				86BB71442A7B0BAB00F873E7 /* Calendar.swift */,
+				576F87052A7D79EF00D3D709 /* Home.swift */,
+				576F870C2A7D7ABC00D3D709 /* Model */,
+				576F87072A7D7A5A00D3D709 /* ViewModel */,
 				9372887B2A79B21E0029526C /* Assets.xcassets */,
 				937288802A79B21E0029526C /* Info.plist */,
 				9372887D2A79B21E0029526C /* Preview Content */,
@@ -155,10 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576F870E2A7D7ACC00D3D709 /* Task.swift in Sources */,
 				86BB71432A7B0B9100F873E7 /* Assignment.swift in Sources */,
+				576F87092A7D7A6D00D3D709 /* TaskViewModel.swift in Sources */,
 				9372887A2A79B21B0029526C /* ContentView.swift in Sources */,
 				937288882A7AEF100029526C /* HomePage.swift in Sources */,
 				937288782A79B21B0029526C /* GoogleLoginApp.swift in Sources */,
+				576F87062A7D79EF00D3D709 /* Home.swift in Sources */,
 				86BB71452A7B0BAB00F873E7 /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,13 +320,13 @@
 				DEVELOPMENT_TEAM = FZ75DRL752;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoogleLogin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KWK.GoogleLogin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GoogleLogin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,13 +342,13 @@
 				DEVELOPMENT_TEAM = FZ75DRL752;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GoogleLogin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KWK.GoogleLogin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GoogleLogin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

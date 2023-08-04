@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Calendar: View {
+/*struct Calendar: View {
     var body: some View {
         VStack{
             Text("Calendar Page")
@@ -21,4 +21,4 @@ struct Calendar_Previews: PreviewProvider {
     static var previews: some View {
         Calendar()
     }
-}
+}*/
