@@ -39,17 +39,16 @@ struct ContentView: View {
             Text("Sign in with Google")
                 .fontWeight(.semibold)
                 .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.474))
+                .multilineTextAlignment(.trailing)
             
-//                .multilineTextAlignment(.trailing)
-                
-            
+
             
         })
         .frame(width: 225, height: 50)
         .foregroundColor(.black)
         .background(Color.white)
         .border(Color(hue: 1.0, saturation: 0.038, brightness: 0.577))
-        .cornerRadius(5)
+        .cornerRadius(2)
         
         }
 }
