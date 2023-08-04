@@ -16,48 +16,71 @@ struct HomePage: View {
     
     var body: some View {
         TabView{
-                VStack{
-                    Text("Welcome, [name]!")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color(hue: 0.624, saturation: 0.507, brightness: 0.619))
-                    
-                        .padding(50)
-                    
-                    
-                    Button( action: {
-                        self.showDetails.toggle()
-                        if self.showDetails {
-                            self.randomQuoteIndex = Int.random(in: 0..<randomQuotes.count)
-                        }
-                    }) {
-                        Text("Quotes")
-                            .foregroundColor(Color(hue: 0.625, saturation: 0.762, brightness: 0.848))
-                            .padding(10)
-                    }
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.gray, lineWidth: 2)
-                    )
-                    if showDetails {
-                        Text(randomQuotes[randomQuoteIndex])
-                            .font(.body)
-                            .foregroundColor(.blue)
-                        
-                    }
+            VStack{
+                Text("Welcome, [name]!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.012, green: 0.291, blue: 0.667))
                 
-           
-                    HStack{
-                        Text("Due Soon")
-                            .multilineTextAlignment(.leading)
-                            .frame(width: 500, height: 150)
-                            .background(Color.gray)
+                
+                
+                Button( action: {
+                    self.showDetails.toggle()
+                    if self.showDetails {
+                        self.randomQuoteIndex = Int.random(in: 0..<randomQuotes.count)
                     }
+                }) {
+                    Text("Quotes")
+                        .font(.headline)
+                        .fontWeight(.medium)
+                        .foregroundColor(Color(red: 0.141, green: 0.31, blue: 0.65))
+                        .padding(5)
+                }
+                .font(.title2)
+                .buttonStyle(.borderedProminent)
+                .tint(Color(red: 0.864, green: 0.899, blue: 0.937))
+                
+                //                    .overlay(
+                //                        RoundedRectangle(cornerRadius: 10)
+                //                            .stroke(Color(red: 0.864, green: 0.899, blue: 0.998))
+                
+                .padding(80)
+                if showDetails {
+                    Text(randomQuotes[randomQuoteIndex])
+                        .font(.body)
+                        .foregroundColor(Color(hue: 0.611, saturation: 0.538, brightness: 0.766))
                     
-                    
+                }
+                
+                //                    Button("Submit Name") {
+                //
+                //                    }
+                //                    .font(.title2)
+                //                    .buttonStyle(.borderedProminent)
+                //                    .tint(.gray)
+                
+                HStack{
+                    Text("Due Soon!")
+                        .font(.body)
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(red: 0.141, green: 0.31, blue: 0.65))
+                        .frame(width: 800, height: 200)
+                        .background(Color(red: 0.864, green: 0.899, blue: 0.937))
+                    Spacer(minLength: 275)
                     
                     
                 }
+                
+                HStack{
+                    Spacer()
+                   
+                    Image(systemName: "plus.app.fill")
+                        .foregroundColor(Color(hue: 0.589, saturation: 0.737, brightness: 0.631))
+                }
+
+        
+            }
+            
             
             
             .tabItem(){
@@ -86,5 +109,6 @@ struct HomePage: View {
             HomePage()
         }
     }
+    
     
 }
