@@ -20,13 +20,15 @@ struct Assignment: View {
     
     var body: some View {
         VStack {
-                
+            Text("Assignment Input Info")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(Color("myblue"))
             Form {
-                                
             Section(header: Text("Class Name")) {
                 TextField("Insert class name here", text: $classn)
             }
-                Section(header: Text("Assignment Name")) {
+                            Section(header: Text("Assignment Name")) {
                     TextField("Insert assignment name here", text: $assignmentn)
                 }
                 Section(header: Text("Due Date")) {
@@ -54,9 +56,9 @@ struct Assignment: View {
                     Stepper("Minutes needed: \(Int(minute))", value: $minute, in: 0...100, step: 5)
                        
                     }
-                  
+                
+
             }
-            
             .accentColor(Color("myblue"))
                 
             /*Text("CLASS NAME")
@@ -72,9 +74,8 @@ struct Assignment: View {
                 .padding(10)
                 .cornerRadius(20)
                 .foregroundColor(Color.gray)*/
-                
+            
         }
-        .navigationTitle("Assignment Input Info")
         .accentColor(Color("myblue"))
         
             }

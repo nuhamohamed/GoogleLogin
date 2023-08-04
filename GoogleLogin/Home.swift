@@ -215,14 +215,24 @@ struct Home: View {
         HStack(spacing: 10){
             
             VStack(alignment: .leading, spacing: 10) {
+                Text("Calendar")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color("myblue"))
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+
                 
                 Text(Date().formatted(date: .abbreviated, time: .omitted))
                     .foregroundColor(.gray)
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+
                 
                 Text("Today")
                     .font(.largeTitle.bold())
                     .foregroundColor(Color(red: 0.001, green: 0.291, blue: 0.679))
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
             }
+            //.frame(maxWidth: .infinity, alignment: .topLeading)
             .hLeading()
             
             Button {
@@ -238,9 +248,9 @@ struct Home: View {
 
         }
         .padding()
-        .padding(.top,getSafeArea().top)
+        //.padding(.top,getSafeArea().top)
         .background(Color.white)
-        .navigationTitle("Calendar")
+
     }
 }
 
